@@ -104,4 +104,44 @@ table {
         height: 15px;
         background-color: black;
     }
+    
+
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.mainNav{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height: 80px;
+    background-color: #e0e0eb;
+    position: fixed;
+}
+.searchBox img{
+    height: 50%;
+    width: 20px;
+}
+.searchBox input{
+    width: 50%;
+    height: 40px;
+    border-radius: 12px;
+}
+.mainLogo{
+    margin: auto 10px;
+    height: 80%;
+    width: 20%;
+    border-radius:25px;
+}
+.sideNav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    height: 100vh;
+    background-color: grey;
+    position: fixed;
+    width: 100px;
+    margin-top: 80px;
+}
 }
