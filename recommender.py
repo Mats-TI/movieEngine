@@ -1,4 +1,4 @@
-from operator import indexOf
+from kmodes.kprototypes import KPrototypes
 import pandas as pd
 import sklearn as skl
 import matplotlib.pyplot as plt
@@ -33,3 +33,12 @@ normalizedCCP=normalizer.fit_transform(arrayCCP).reshape(1,-1)
 movieMatrix=moviesData.to_numpy()
 
 #The Elbow method to determine the optimal number of clusters (others may be used)
+cost=[]
+for i in range(1,10):
+    kprototype=KPrototypes(n_jobs=-1,n_clusters=i,init='Huang',random_state=0)
+    kprototype.fit_predict(movieMatrix,categorical=CategoricalColumnPositions)
+    cost.append(kprototype.cost_)
+
+costMatrix=pd.DataFrame({'Cluster':range(1,11),'cost':cost})
+plt.plot(data=costMatrix)
+plt.show()
