@@ -59,7 +59,6 @@ table {
         width:100vw;
         height: 80px;
         background-color: #e0e0eb;
-        position: fixed;
     }
     .mainLogo{
         margin: auto 10px;
@@ -92,11 +91,6 @@ table {
         width: 8%;
         margin-left: 3%;
     }
-    .mainReel span{
-        width: 100vh;
-        height: 15px;
-        background-color: black;
-    }
     .searchBox img{
         height: 40px;
         width: 30px;
@@ -115,5 +109,28 @@ table {
         margin-left: 3%;
         box-shadow: none;
         border: none;
+        font-size: medium;
+    }
+    .searchBox input:focus{
+        outline:0;
+        border-bottom: black 2px solid;
+    }
+
+    .top-filmReel, .bottom-filmReel{
+        height: 20px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction:row;
+    }
+    .middleFilmReel{
+        height: 100px;
+        width: 100%;
+        background-color: white;
+    }
+    .mainReel{
+        width: 100%;
+        position: absolute;
+        bottom:0
     }
 }
