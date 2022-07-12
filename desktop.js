@@ -1,6 +1,4 @@
-
-
-onload=()=>{
+const FilmStrips=()=>{
     var topReel=document.querySelector('.top-filmReel');
     const bottomReel=document.querySelector('.bottom-filmReel');
 
@@ -24,4 +22,22 @@ onload=()=>{
         blocks.style.borderRadius='50%';
         bottomReel.append(blocks)
     }
+}
+var filmReel=()=>{
+    var midReel=document.querySelector('.middleFilmReel');
+    for (var i=0;i<midReel.clientWidth/273;i++){
+        titles=document.createElement('div');
+        titles.style.backgroundColor='grey';
+        titles.style.width=midReel.clientWidth/4;
+        titles.style.height='98%';
+        titles.style.border='1px white groove';
+        titles.style.borderRadius='10px';
+        titles.style.margin='auto';
+        midReel.append(titles);
+    }
+}
+
+onload=()=>{
+    FilmStrips()
+    filmReel()  
 }
