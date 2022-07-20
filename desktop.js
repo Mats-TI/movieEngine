@@ -1,11 +1,11 @@
 const FilmStrips=()=>{
     var topReel=document.querySelector('.top-filmReel');
     const bottomReel=document.querySelector('.bottom-filmReel');
-
+    console.log(topReel.clientWidth)
     for (var i=0;i<topReel.clientWidth/20;i++){
         const blocks=document.createElement('div');
         blocks.style.backgroundColor='white';
-        blocks.style.width=topReel.clientWidth/20;
+        blocks.style.width='50%'
         blocks.style.height='100%';
         blocks.style.border="1px white solid";
         blocks.style.margin='1px 3px 1px 3px';
@@ -15,7 +15,7 @@ const FilmStrips=()=>{
     for (var i=0;i<bottomReel.clientWidth/20;i++){
         const blocks=document.createElement('div');
         blocks.style.backgroundColor='white';
-        blocks.style.width=topReel.clientWidth/20;
+        blocks.style.width='50%';
         blocks.style.height='100%';
         blocks.style.border="1px white solid";
         blocks.style.margin='1px 3px 1px 3px';
@@ -28,11 +28,11 @@ var filmReel=()=>{
     for (var i=0;i<midReel.clientWidth/273;i++){
         titles=document.createElement('div');
         titles.style.backgroundColor='grey';
-        titles.style.width=midReel.clientWidth/4;
+        titles.style.width='20%';
         titles.style.height='98%';
         titles.style.border='1px white groove';
         titles.style.borderRadius='10px';
-        titles.style.margin='auto';
+        titles.style.margin='0 5px 3px 5px';
         midReel.append(titles);
     }
 }

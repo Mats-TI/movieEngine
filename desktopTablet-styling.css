@@ -48,6 +48,11 @@ table {
 }
 /*End CSS reset*/
 @media only screen and (min-width:760px) {
+    .wrapper{
+        width: 100vw;
+        height: calc(100vh - 220px);
+        background-color: #e0e0eb;
+    }
     .searchBox{
         display: flex;
         align-items: center;
@@ -58,7 +63,7 @@ table {
         flex-direction: row;
         width:100vw;
         height: 80px;
-        background-color: #e0e0eb;
+        background-color: #8989b5;
     }
     .mainLogo{
         margin: auto 10px;
@@ -133,6 +138,10 @@ table {
     .mainReel{
         width: 100%;
         position: absolute;
-        bottom:0
+        bottom:0;
+        opacity:0.5
+    }
+    .mainReel:hover{
+        opacity: 1;
     }
 }
