@@ -121,7 +121,30 @@ table {
         outline:0;
         border-bottom: black 2px solid;
     }
-
+    .landingPage{
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        padding-top: 10%;
+    }
+    .landingPage h2,.landingPage p{
+        margin-top: 2%;
+    }
+    .landingPage button{
+        margin-top: 20px;
+    }
+    h1,h2,p{
+        color: white;
+    }
+    .mainReel h1{
+        margin-left: 100px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
     .top-filmReel, .bottom-filmReel{
         height: 20px;
         width: 100%;
