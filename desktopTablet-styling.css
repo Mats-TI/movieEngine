@@ -50,8 +50,9 @@ table {
 @media only screen and (min-width:760px) {
     .wrapper{
         width: 100vw;
-        height: calc(100vh - 220px);
-        background-color: #e0e0eb;
+        height: calc(100vh - 80px);
+        background-image: url('https://media.istockphoto.com/photos/film-reels-on-black-background-movie-video-and-cinema-prodaction-and-picture-id1336937059?b=1&k=20&m=1336937059&s=170667a&w=0&h=Lg5T5VAhrTRhHmFrWp8cTWRjZrSm-nPkeTpVU2dsZoE=');
+        background-size: 100%;
     }
     .searchBox{
         display: flex;
@@ -63,7 +64,7 @@ table {
         flex-direction: row;
         width:100vw;
         height: 80px;
-        background-color: #8989b5;
+        background-color: grey;
     }
     .mainLogo{
         margin: auto 10px;
@@ -74,12 +75,12 @@ table {
     .sideNav{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-        height: 100vh;
+        height: calc(100vh - 80px);
         visibility: hidden;
         background-color: grey;
         position: fixed;
         width: 250px;
-        margin-top: 80px;
+        z-index:2;
     }
     .sideNav ul{
         width: 250px;

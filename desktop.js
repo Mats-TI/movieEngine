@@ -1,7 +1,6 @@
 const FilmStrips=()=>{
     var topReel=document.querySelector('.top-filmReel');
     const bottomReel=document.querySelector('.bottom-filmReel');
-    console.log(topReel.clientWidth)
     for (var i=0;i<topReel.clientWidth/20;i++){
         const blocks=document.createElement('div');
         blocks.style.backgroundColor='white';
@@ -34,6 +33,17 @@ var filmReel=()=>{
         titles.style.borderRadius='10px';
         titles.style.margin='0 5px 3px 5px';
         midReel.append(titles);
+    }
+}
+const showMenu=()=>{
+    var menu=document.querySelector('.sideNav');
+    menuVis=window.getComputedStyle(menu).getPropertyValue('visibility')
+    console.log(menuVis)
+    if (menuVis =='hidden'){
+        menu.style.visibility='visible';
+    }
+    else{
+        menu.style.visibility='hidden';
     }
 }
 
