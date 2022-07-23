@@ -37,13 +37,16 @@ var filmReel=()=>{
 }
 const showMenu=()=>{
     var menu=document.querySelector('.sideNav');
+    let button=document.querySelector('.sideMenuButton');
     menuVis=window.getComputedStyle(menu).getPropertyValue('visibility')
     console.log(menuVis)
     if (menuVis =='hidden'){
         menu.style.visibility='visible';
+        button.innerHTML='Menu &#9664';
     }
     else{
         menu.style.visibility='hidden';
+        button.innerHTML='Menu &#9654';
     }
 }
 
