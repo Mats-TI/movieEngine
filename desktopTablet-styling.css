@@ -115,7 +115,8 @@ table {
         margin-left: 3%;
         box-shadow: none;
         border: none;
-        font-size: medium;
+        font-size: small;
+        font-weight: bold;
     }
     .searchBox input:focus{
         outline:0;
