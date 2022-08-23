@@ -1,4 +1,5 @@
 import {React, useEffect,useState} from 'react'
+import './desktopStyle.css'
 
 const InfoWrapper=(thisProp)=>{
     const [movieName, setMovieName]=useState('primaryMovie')
@@ -19,7 +20,8 @@ const InfoWrapper=(thisProp)=>{
     })
 
     return(
-        <div>
+        <div className='movieInfoWrapper'>
+            <div className='movieInfoText'>
             <h1 className='stylizedName'>{movieName}</h1>
             <section className='reviews'><span>{`RT Score: ${rtScore}`}</span><span>{`IMDb Score: ${imdbScore}`}</span></section>
             <section className='movieSummary'>
@@ -27,8 +29,8 @@ const InfoWrapper=(thisProp)=>{
                 <p>{movieSummary}</p>
             </section>
             <button className='trailerButton'>Watch Trailer</button>
-            <p>Stream the movie at: <span>{stream1}</span><span>{stream2}</span></p>
-
+            <p className='streamLinks'>Stream the movie at: <span>{stream1}</span><span>{stream2}</span></p>
+            </div>
         </div>
     )
 }
